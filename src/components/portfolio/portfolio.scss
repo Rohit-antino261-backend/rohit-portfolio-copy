@@ -1,0 +1,54 @@
+@import '../../global.scss';
+.portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    h2{
+        font-size: 3em; 
+        color: $mainColor;
+    }
+    ul{
+        display: flex;
+        width: 25em;
+        justify-content: space-between;
+
+    }
+    .container{
+        width: 60%;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .item{
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            position: relative;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            
+            img{
+               width: 100%;
+               z-index: 1;
+               transition: all 0.7s ease;
+               &:hover{
+                cursor: pointer;
+                z-index: 0;
+                opacity: 0.1;
+              }
+            }
+            h3{
+             position:absolute;
+             color: $mainColor;
+             font-weight: 500;
+            }
+            
+            
+        }
+    }
+}
