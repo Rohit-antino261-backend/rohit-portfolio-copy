@@ -8,25 +8,26 @@ const data=[
   {
     id:1,
     title:"Ecommers",
-    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illum.",
+    desc:"MERN Application",
     img:"./assets/project1.jpg"
   },
   {
     id:2,
-    title:"two",
-    desc:"some description",
-    img:"./assets/ui.webp"
+    title:"Profile",
+    desc:"Just for Fun!!",
+    img:"./assets/project2.jpg"
   },
   {
     id:3,
-    title:"three",
-    desc:"some description",
-    img:"./assets/ui.webp"
+    title:"Design",
+    desc:"Just for Fun!!",
+    img:"./assets/project4.jpg"
+    
   },
   {
     id:4,
-    title:"four",
-    desc:"some description",
+    title:"Booking",
+    desc:"MERN Application 'status:working....'",
     img:"./assets/ui.webp"
   }
 ]
