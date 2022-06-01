@@ -7,9 +7,9 @@ import { useState } from "react";
 const data=[
   {
     id:1,
-    title:"one",
-    desc:"some description",
-    img:"./assets/ui.webp"
+    title:"Ecommers",
+    desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illum.",
+    img:"./assets/project1.jpg"
   },
   {
     id:2,
@@ -38,14 +38,16 @@ function Work() {
   const changeSlide=(type)=>{
     if(type==="backward"){
       setCurrentSlide(currentSlide>0?currentSlide-1:data.length-1)
+    }else{
+      setCurrentSlide(currentSlide<data.length-1?currentSlide+1:0)
     }
-    setCurrentSlide(currentSlide<data.length-1?currentSlide+1:0)
+    
   }
 
-  
+  console.log(currentSlide)
   return (
    <div className='work' id="work">
-     <div className="slider" style={{transform: `translateX(${currentSlide *100}vw)`}}>
+     <div className="slider" style={{transform: `translateX(-${currentSlide *100}vw)`}}>
       {data.map(d=>{
         return <div className="container">
           <div className="card">
