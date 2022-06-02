@@ -1,3 +1,169 @@
+@import '../../global.scss';
 .contact{
-    background-color: rgb(204, 243, 238);
-}
+    background-color: rgb(155, 163, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .wrapper{
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+            .card{
+                width: 800px;
+                height: 500px;
+                position: absolute;
+                background-color: white;
+                border-radius: 25px;
+                display: flex;
+               
+                .left{
+                    width: inherit;
+                height: inherit;
+                   flex: 1;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   .imagecontainer{
+                       width: 90%;
+                       height: 90%;
+                    //    border: 1px solid black;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       img{
+                           width: inherit;
+                           height: inherit;
+                           object-fit: cover;
+                        //    border: 1px solid black;
+                       }
+                   }
+                }
+                .right{
+                    width: inherit;
+                    height: inherit;
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .rightcontainer{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        .top{
+                         display: flex;
+                         h2{
+                             font-size: 30px;
+                             opacity: 0.9;
+                             font-weight: 600;
+                             color: $mainColor;
+                             margin: 20px 5px;
+                         }
+                        }
+                        .center{
+                            display: flex;
+                            flex-direction: column;
+
+                            .centerinput{
+                                background-color: rgb(239, 239, 239);
+                                margin: 5px;
+                                display: flex;
+                                border-radius: 20px;
+                                justify-content: flex-start;
+                                align-items: center;
+                                opacity: 0.5;
+                                padding: 15px 20px;
+                                input{
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    background-color: rgb(239, 239, 239);
+                                    border: none;
+                                    outline: none;
+                                }
+                                .centerlogo{
+                                    font-size: 14px;
+                                    opacity: 0.5;
+                                }
+                                .message{
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    background-color: rgb(239, 239, 239);
+                                    border: none;
+                                    outline: none;
+                                    width: 230px;
+                                    height: 60px;
+                                }
+                            }
+                        }
+                        .bottom{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 10px;
+                            .submit{
+                                width: 265px;
+                                border-radius: 20px;
+                                cursor: pointer;
+                                padding: 10px;
+                                font-size: 15px;
+                                font-weight: 500;
+                                background-color: rgb(100, 111, 212);
+                                border: none;
+                                color: white;
+                                margin-bottom: 10px;
+                            }
+                            span{
+                                opacity: 0.4;
+                                font-size: 14px;
+                                font-weight: 600;
+                               margin-top: 10px;
+                            }
+                            .sociallogo{
+                                margin-top: 20px;
+                                display: flex;
+                                height: 50px;
+                                width: 200px;
+                                justify-content: space-between;
+                                .logofacebook,.logotwitter,.logolinkedin{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 50px;
+                                    border-radius: 50%;
+                                    // font-size: 2em;
+                                }
+                                .logofacebook{
+                                  background-color: #3b5998;  
+                                }
+                                .facebook{
+                                    font-size: 2em;
+                                    color: white;
+                                }
+                                .logotwitter{
+                                    background-color:#26a7de;
+                                    color: white;
+                                }
+                                .twitter{
+                                    font-size: 2em;
+                                }
+                                .logolinkedin{
+                                    background-color: #0072b1;
+                                    color: white;
+                                }
+                                .linkedin{
+                                    font-size: 2em;
+                                }
+                               
+                
+                              }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
