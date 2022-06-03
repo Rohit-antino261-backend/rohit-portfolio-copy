@@ -49,7 +49,7 @@ function Portfolio() {
           {project.map((item)=>{
             return <a href={item.link}>
               <div className="item">
-            <img src="./assets/portfolio.webp"/>
+            <img src={item.img}/>
             <h3>{item.title}</h3>
             </div> 
             </a>
