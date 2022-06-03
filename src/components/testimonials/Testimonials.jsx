@@ -48,7 +48,7 @@ const handleTestimonial=(id)=>{
 console.log(activetestimonial)
   return (
     <div className='testimonials' id="testimonials">
-      <div className="slider" style={{transform: `translateX(${activetestimonial*100}vw)`}}>
+      <div className="slider" style={{transform: `translateX(${activetestimonial*-100}vw)`}}>
 
         {testimonials.map((item)=>(
           <div className="container">

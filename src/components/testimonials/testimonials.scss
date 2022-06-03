@@ -20,6 +20,8 @@
             cursor: pointer;
             &.active{
                 color: white;
+                background-color: white;
+                border-radius: 50%;
             }
         }
        
@@ -27,7 +29,7 @@
     .slider{
         position: absolute;
         transition: all 1s ease;
-        right: 0;
+        left: 0;
         height: calc(100vh - 70px);
         display: flex;
         .container{
@@ -88,7 +90,7 @@
                             .bottomtop{
                                 display: flex;
                                 width: 100%;
-                                opacity: 0.7;
+                                opacity: 0.3;
                                 justify-content: flex-start;
                                 .leftquote{
                                     font-size: 4em;
@@ -113,7 +115,7 @@
                             .bottombottom{
                                 display: flex;
                                 width: 100%;
-                                opacity: 0.7;
+                                opacity: 0.3;
                                 justify-content: flex-end; 
                                 .rightquote{
                                     font-size: 4em;
