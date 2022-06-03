@@ -1,14 +1,33 @@
+@import '../../global.scss';
 .testimonials{
     background-color: rgb(10, 161, 221);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    
+    .navigate{
+        width: 100px;
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        >*{
+            color:$mainColor;
+            font-size: 20px;
+            cursor: pointer;
+            &.active{
+                color: white;
+            }
+        }
+       
+    }
     .slider{
         position: absolute;
         transition: all 1s ease;
         right: 0;
-        transform: translateX(0vw);
         height: calc(100vh - 70px);
         display: flex;
         .container{
