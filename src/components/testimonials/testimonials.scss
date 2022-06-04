@@ -76,14 +76,26 @@
                                 align-items: center;
                                 flex: 1;
                                 h3{
-                                    font-size: 17px;
+                                    font-size: 15px;
                                     letter-spacing: 1px;
                                     font-weight: 600;
                                     opacity: 0.9;
                                 }
-                                span{
+                                .linkedin{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    .link{
+                                        background-color: #0072b1;
+                                        border-radius: 5px;
+                                        color: white;
+                                        padding: 5px;
+                                        cursor: pointer;  
+                                    }
+                                    span{
+                                        margin-left: 10px;
                                     font-size: 12px;
-                                    margin-top: 5px;
+                                    }
                                 }
                             }
                          }

@@ -4,28 +4,32 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import AdjustIcon from '@mui/icons-material/Adjust';
 import FiberManualRecordOutlinedIcon from '@mui/icons-material/FiberManualRecordOutlined';
 import { useSelect } from '@mui/base';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const testimonials=[
   {
     id:1,
-    img:"./assets/testimonial-user-two.jpg",
+    img:"./assets/amar.jfif",
     review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
     name:"Amar Paloki",
-    position:"React Developer"
+    position:"React Developer",
+    link:"https://www.linkedin.com/in/amar-patro-a624a512a/"
   },
   {
     id:2,
-    img:"./assets/testimonial-user-three.png",
+    img:"./assets/modi.jfif",
     review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
-    name:"Satish Patel",
-    position:"Team Lead"
+    name:"yash modi",
+    position:"Mern Stack Developer",
+    link:"https://www.linkedin.com/in/yash-modi-ab8372170/"
   },
   {
     id:3,
-    img:"./assets/testimonial-user-four.jpg",
+    img:"./assets/smitu.jfif",
     review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
     name:"Smitendu choudhary",
-    position:"Node.js Developer"
+    position:"Node.js Developer",
+    link:"https://www.linkedin.com/in/choudhury-ps-smitendu-668530220/"
   },
   {
     id:4,
@@ -59,8 +63,11 @@ console.log(activetestimonial)
                   <img src={item.img}/>
                 </div>
                 <div className="profilebottom">
-                  <h3>{item.name}</h3>
+                  <h3>{item.name.toUpperCase()}</h3>
+                  <div className="linkedin">
+                  <a href={item.link}> <LinkedInIcon className='link'/></a>
                   <span>{item.position}</span>
+                  </div>
                 </div>
              </div>
           </div>
