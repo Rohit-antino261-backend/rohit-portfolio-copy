@@ -49,6 +49,28 @@
         display: flex;
         justify-content:flex-end;
         align-items: center;
+
+        .resume{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-right: 50px;
+           
+           .viewlogo{
+               font-size: 30px;
+           }
+            a{
+                text-decoration: none;
+                margin-left: 5px;
+                color: $mainColor;
+                font-weight: 600;
+                transition: all 0.7s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+         }
+        }
         .hamburger{
             width: 25px;
             height: 35px;
@@ -71,6 +93,11 @@
         color: white;
             .logo{
                 color: white;
+            }
+            .resume{
+                a{
+                    color: white;
+                }
             }
             .hamburger{
                 span{
