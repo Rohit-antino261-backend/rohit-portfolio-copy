@@ -74,7 +74,7 @@ console.log(activetestimonial)
           <div className="right">
             <div className="rightcontainer">
               <div className="top">
-              <h2>Client Reviews</h2>
+              <h2>Friends Review</h2>
               </div>
               <div className="bottom">
                 <div className="bottomtop">

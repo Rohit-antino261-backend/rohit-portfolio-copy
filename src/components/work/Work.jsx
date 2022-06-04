@@ -3,33 +3,57 @@ import LanguageIcon from '@mui/icons-material/Language';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from "react";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { ListItem } from "@mui/material";
 
 const data=[
   {
     id:1,
-    title:"Ecommers",
+    title:"Ecommerce(Client)",
     desc:"MERN Application",
-    img:"./assets/project1.jpg"
+    img:"./assets/projectoneclient.jpg",
+    link:"https://github.com/Rohit-COOL-Coder/frontend-user-shop"
   },
   {
     id:2,
-    title:"Profile",
-    desc:"Just for Fun!!",
-    img:"./assets/project2.jpg"
+    title:"Ecommerce(Admin)",
+    desc:"MERN Application",
+    img:"./assets/projecttwoadmin.jpg",
+    link:"https://github.com/Rohit-COOL-Coder/frontend-admin-shop"
+
   },
   {
     id:3,
-    title:"Design",
-    desc:"Just for Fun!!",
-    img:"./assets/project4.jpg"
-    
+    title:"Portfolio",
+    desc:"React Application",
+    img:"./assets/projectportfolio.jpg",
+    link:"https://rohit-new-portfolio.netlify.app",
+    link:"https://github.com/Rohit-COOL-Coder/portfolio"
   },
   {
     id:4,
-    title:"Booking",
+    title:"Profile",
+    desc:"Just for Fun!!",
+    img:"./assets/project2.jpg",
+    link:"https://github.com/Rohit-COOL-Coder/frontend-admin-shop"
+  },
+  {
+    id:5,
+    title:"Design",
+    desc:"Just for Fun!!",
+    img:"./assets/project4.jpg",
+    link:"https://github.com/Rohit-COOL-Coder/Krishwork-frontend-assignment"
+    
+  },
+  {
+    id:6,
+    title:"Booking(Working)",
     desc:"MERN Application 'status:working....'",
-    img:"./assets/ui.webp"
+    img:"./assets/ui.webp",
+    link:"https://pagenotfound"
   }
+  
+
 ]
 
 function Work() {
@@ -56,9 +80,11 @@ function Work() {
             <div className="left">
                   <div className="leftcontainer">
                     <div className="leftlogo">
-                    <LanguageIcon/>
+                    <a href={d.link}><GitHubIcon className="gitlink"/></a>
                     </div>
+                    <div className="titlecontainer">
                     <h2>{d.title}</h2>
+                    </div>
                     <span>{d.desc}</span>
                     <h3>Project</h3>
                   </div>

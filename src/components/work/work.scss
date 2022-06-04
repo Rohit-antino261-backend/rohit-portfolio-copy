@@ -49,7 +49,7 @@
          justify-content: center;
 
          .card{
-            width: 600px;
+            width: 830px;
             height: 100%;
             border-radius: 10px;
             background-color: white;
@@ -59,8 +59,10 @@
                 .left{
                  display: flex;
                  flex: 2;
+                 
+                 
                  .leftcontainer{
-                     display: flex;
+                    display: flex;
                      flex-direction: column;
                      justify-content: center;
                      align-items: flex-start;
@@ -72,14 +74,26 @@
                          align-items: center;
                          padding: 5px;
                          border-radius: 50%;
-                         margin: 5px 0;  
+                         margin: 5px 0; 
+                         cursor: pointer;
+                         
+                         a{
+                         }
+                         .gitlink{
+                           
+                         }
                      }
- 
-                     h2{
-                       font-size: 30px;
-                       font-weight: 600;
-                       margin: 5px 0;
-                     }
+                     .titlecontainer{
+                        display: flex;
+                        flex-wrap: wrap;
+                        h2{
+                            font-size: 30px;
+                            font-weight: 600;
+                            margin: 5px 0;
+                       
+                          }
+                    }
+                     
                      h3{
                          margin: 5px 0;
                          text-decoration: underline;
