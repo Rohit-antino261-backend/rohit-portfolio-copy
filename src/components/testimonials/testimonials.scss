@@ -53,10 +53,39 @@
                     align-items: center;
                     flex: 1;
                     height: inherit;
-                         .imagecontainer{
-                            width: 150px;
-                            height: 200px;
-                            border-radius: 10px;
+                         .profilecontainer{
+                             padding: 10px;
+                             background-color: rgb(239, 234, 216);
+                             border: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            .profiletop{
+                                margin-bottom: 10px;
+                              display: flex;
+                              flex: 2;
+                              img{
+                                  width: 120px;
+                                  object-fit: cover;
+                              }
+                            }
+                            .profilebottom{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                flex: 1;
+                                h3{
+                                    font-size: 17px;
+                                    letter-spacing: 1px;
+                                    font-weight: 600;
+                                    opacity: 0.9;
+                                }
+                                span{
+                                    font-size: 12px;
+                                    margin-top: 5px;
+                                }
+                            }
                          }
                     
                     }

@@ -8,31 +8,31 @@ import { useSelect } from '@mui/base';
 const testimonials=[
   {
     id:1,
-    img:"./assets/testimonial-user-two.png",
-    review:"Review one",
-    name:"Satish Patel",
-    position:""
+    img:"./assets/testimonial-user-two.jpg",
+    review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
+    name:"Amar Paloki",
+    position:"React Developer"
   },
   {
     id:2,
     img:"./assets/testimonial-user-three.png",
-    review:"Review two",
+    review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
     name:"Satish Patel",
-    position:""
+    position:"Team Lead"
   },
   {
     id:3,
     img:"./assets/testimonial-user-four.jpg",
-    review:"Review three",
-    name:"Satish Patel",
-    position:""
+    review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
+    name:"Smitendu choudhary",
+    position:"Node.js Developer"
   },
   {
     id:4,
     img:"./assets/testimonial-user-five.jpg",
-    review:"Review four",
-    name:"Satish Patel",
-    position:""
+    review:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia",
+    name:"Abhishek kumar",
+    position:"Data Analyst"
   }
   
 ]
@@ -54,10 +54,15 @@ console.log(activetestimonial)
           <div className="container">
           <div className="card">
           <div className="left">
-            
-             <div className="imagecontainer">
+             <div className="profilecontainer">
+                <div className="profiletop">
+                  <img src={item.img}/>
+                </div>
+                <div className="profilebottom">
+                  <h3>{item.name}</h3>
+                  <span>{item.position}</span>
+                </div>
              </div>
-            
           </div>
           <div className="right">
             <div className="rightcontainer">
@@ -69,7 +74,7 @@ console.log(activetestimonial)
                 <FormatQuoteIcon className='leftquote'/>
                 </div>
               <div className="bottomcenter">
-              <span className='quote'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, commodi tempora velit nihil nisi quisquam qui magni accusantium mollitia et.</span>
+              <span className='quote'>{item.review}</span>
               </div>
               <div className="bottombottom">
               <FormatQuoteIcon className='rightquote'/>
