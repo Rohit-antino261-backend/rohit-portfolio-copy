@@ -65,8 +65,10 @@
                 margin-left: 5px;
                 color: $mainColor;
                 font-weight: 600;
-                transition: all 0.7s ease;
+                transition: all 0.2s ease;
+                opacity: 0.7;
                 &:hover{
+                    opacity: 1;
                     transform: scale(1.1);
                 }
          }
