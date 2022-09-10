@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
 import emailjs from 'emailjs-com';
+import {motion} from "framer-motion"
 
 function Contact() {
   const [mailsend,setMailSend]=useState(false)
@@ -41,8 +42,13 @@ const handleSubmit=(e)=>{
           <div className="card">
             <div className="left">
                <div className="imagecontainer">
-                 <img src='./assets/contactsideimg.jpg'/>
-               </div>
+               <lottie-player 
+style={{
+    "width": "500px", 
+    "height": "400px"
+}}
+src="https://assets3.lottiefiles.com/packages/lf20_isbiybfh.json"  background="transparent"  speed="1"    loop  autoplay></lottie-player>
+              </div>
             </div>
             <div className="right">
               
@@ -50,7 +56,7 @@ const handleSubmit=(e)=>{
                 
                <div className="rightcontainer">
                  <div className="top">
-                   <h2>Contact me</h2>
+                   <h2>Contact Us</h2>
                  </div>
                  <div className="center">
                    <div className="centerinput">
@@ -70,15 +76,30 @@ const handleSubmit=(e)=>{
                   <span>Or</span>
                    
                   <div className="sociallogo">
-                    <div className="logofacebook">
+                    <motion.div 
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    viewport={{once:true,amount:0}}
+                    transition={{delay:1,duration:1}}
+                    className="logofacebook">
                     <FacebookIcon className='facebook'/>
-                    </div>
-                    <div className="logotwitter">
+                    </motion.div>
+                    <motion.div 
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    viewport={{once:true,amount:0}}
+                    transition={{delay:1.5,duration:1}}
+                    className="logotwitter">
                     <TwitterIcon className='twitter'/>
-                    </div>
-                    <div className="logolinkedin">
+                    </motion.div>
+                    <motion.div 
+                    initial={{opacity:0}}
+                    whileInView={{opacity:1}}
+                    viewport={{once:true,amount:0}}
+                    transition={{delay:2,duration:1}}
+                    className="logolinkedin">
                     <LinkedInIcon className='linkedin'/>
-                    </div>
+                    </motion.div>
                   </div>
                  </div>
                </div>

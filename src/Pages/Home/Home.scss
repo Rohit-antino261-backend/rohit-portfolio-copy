@@ -1,0 +1,39 @@
+.feedback-container{
+    width: 100%;
+    height: 100vh;
+    
+    .feedback-wrapper{
+        height: calc(100vh - 70px);
+        background-image: linear-gradient( rgb(127, 183, 126) ,black);
+        position: relative;
+        top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;    
+    }
+    &.disable{
+        filter: blur(20px);
+        pointer-events: none;
+        user-select: none;
+    }
+    .submit-button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 5;
+        .home-button-fb{
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(127, 183, 126);
+            border-radius: 5px;
+            &.disable{
+                background-color: lightgray;
+            }
+        }
+    }
+}
