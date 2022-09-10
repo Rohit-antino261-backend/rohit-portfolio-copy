@@ -69,7 +69,7 @@ console.log()
         <div className='div-one'>
             <div className='one-top'>
                 <label className='left'>
-                    <span className='title'>How was your Ride?</span>
+                    <span className='title'>How was your Experiance?</span>
                 </label>
                 <label className='right'>
                    <CloseIcon onClick={handleClose} className='close-icon'/>
@@ -91,9 +91,13 @@ console.log()
             </div>
             <div className='two-bottom'>
                 <motion.button 
-                whileTap={{
-                  scale: 0.9
+                whileHover={{
+                  scale: 1.1
                 }}
+                whileTap={{
+                    scale:0.9
+                }}
+                transition={{duration:0.5}}
                 className={(Object.keys(fieldError)==0)?"feedback-button":"feedback-button disable"} onClick={handleSubmit}disabled={!(Object.keys(fieldError)==0)}>
                SUBMIT FEEDBACK</motion.button>
             </div>

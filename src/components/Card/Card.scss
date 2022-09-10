@@ -33,6 +33,10 @@
             font-weight: 700;
             opacity: 0.7;
         }
+        .success-icon{
+            position: absolute;
+            top:20%;
+        }
     }
     .card-center{
         flex: 1;
@@ -132,7 +136,7 @@
                 width: 90%;
                 height: 70%;
                 font-size: 13px;
-                font-weight: 700;
+                font-weight: 500;
                 cursor: pointer;
                 border-radius: 5px;
                 color: white;
@@ -145,14 +149,76 @@
             }
         }
     }
-    &.disable{
-        filter: blur(20px);
-        pointer-events: none;
-        user-select: none;
-    }
+    // &.disable{
+    //     filter: blur(20px);
+    //     pointer-events: none;
+    //     user-select: none;
+    // }
 }
-.popup{
+.popup-outer
+
+{
+
     position: fixed;
+
     z-index: 5;
-    top: 20%;
+
+    width : 100vw;
+
+    height: 90vh;
+
+    background-color: rgba(1,1,1,0.8);
+
+    // background-image: rgba(255,255,255,0.5);
+
+    // &.disable{
+
+    //     filter: blur(20px);
+
+    //     pointer-events: none;
+
+    //     user-select: none;
+
+    // }
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    .popup-outer > div
+
+    {
+
+        position : relative;
+
+        height: 50%;
+
+        width: 50%;
+
+        z-index: 6;
+
+        // top : 50%;
+
+        // left : 50%;
+
+        background-color: blue;
+
+        .popup
+
+        {
+
+            position : absolute;
+
+            z-index: 1000;
+
+            // left : 50%;
+
+            // top : 50%;
+
+        }
+
+    }
+
 }
